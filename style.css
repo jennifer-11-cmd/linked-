@@ -1,77 +1,117 @@
 * {
-  padding: 0;
-  margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
 }
 body {
-  background-color: rgb(74, 74, 150);
-  display: flex;
-  width: 80%;
-  height: 100vh;
+  background-color: rgb(42, 42, 50);
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  font-family: sans-serif;
 }
-.section {
-  width: 60%;
-  margin: 3% 0 0 6%;
-  font-size: 20px;
+.sec {
   background-color: #fff;
-  height: 87%;
+  height: 650px;
+  width: 900px;
+  border-radius: 10px;
   padding-left: 30px;
-  border-radius: 20px;
-  line-height: 40px;
+  padding-top: 40px;
 }
 h1 {
   font-size: 50px;
-  margin: 0 0 20px 10px;
-  padding-top: 100px;
 }
 p {
   font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 14px;
 }
-h3 {
-  margin-bottom: 5px;
-  display: block;
-  font-weight: 500;
-  margin-left: 7px;
-}
-svg {
-  display: inline-block;
-  padding-right: 10px;
+.p {
+  margin-left: 8px;
 }
 h4 {
-  margin-top: 30px;
-  margin-bottom: 8px;
+  margin-top: 15px;
 }
 input {
-  padding: 15px 0 15px 5px;
   width: 400px;
-  border-radius: 6px;
-  border: 0.5px solid rgb(163, 152, 152);
+  padding: 17px 5px 17px 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(102, 98, 98);
+}
+button {
+  width: 400px;
+  padding: 17px 5px 17px 5px;
+  border-radius: 5px;
+  border: 0;
+  background: black;
+  color: #fff;
+  letter-spacing: 2px;
+}
+button:hover {
+  background: linear-gradient(to right, red, orange);
+}
+img {
+  padding-right: 13px;
+}
+.image1 {
+  display: none;
+}
+.image {
+  position: absolute;
+  top: 63px;
+  left: 53%;
+  border-radius: none;
+}
+.seh {
+  background-color: #fff;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 20px;
+}
+h2 {
+  font-size: 28px;
+}
+.pn {
+  font-size: 13px;
 }
 .btn {
-  margin-top: 14px;
-  width: 405px;
-  background-color: black;
-  color: #fff;
-  padding: 15px 0 15px 5px;
-  border-radius: 6px;
-  border: 0;
-  transition: 0.5s;
+  width: 230px;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  margin-left: 20px;
 }
-.btn:hover {
-  background: linear-gradient(to right, red, orange);
-  color: #fff;
+span {
+  font-weight: bold;
 }
-.svg {
-  top: 13%;
-  left: 57%;
-  position: absolute;
-  justify-content: flex-end;
+icon {
+  font-size: 20px;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat();
+@media (max-width: 600px) {
+  .image {
+    display: none;
+  }
+  .sec {
+    width: 500px;
+    height: 100vh;
+    padding-top: 50px;
+  }
+  button:hover {
+    background: linear-gradient(to right, red, orange);
+  }
+  .image1 {
+    display: block;
+    width: 100%;
+
+    top: 0;
+  }
+}
+@media (min-width: 300px) {
+  button {
+    width: 350px;
+  }
+  input {
+    width: 350px;
+  }
 }

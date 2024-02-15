@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background-color: rgb(74, 74, 150);
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  width: 60%;
+  margin: 3% 0 0 6%;
+  font-size: 20px;
+  background-color: #fff;
+  height: 87%;
+  padding-left: 30px;
+  border-radius: 20px;
+  line-height: 40px;
+}
+h1 {
+  font-size: 50px;
+  margin: 0 0 20px 10px;
+  padding-top: 100px;
+}
+p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+h3 {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 500;
+  margin-left: 7px;
+}
+svg {
+  display: inline-block;
+  padding-right: 10px;
+}
+h4 {
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+input {
+  padding: 15px 0 15px 5px;
+  width: 400px;
+  border-radius: 6px;
+  border: 0.5px solid rgb(163, 152, 152);
+}
+.btn {
+  margin-top: 14px;
+  width: 405px;
+  background-color: black;
+  color: #fff;
+  padding: 15px 0 15px 5px;
+  border-radius: 6px;
+  border: 0;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: linear-gradient(to right, red, orange);
+  color: #fff;
+}
+.svg {
+  top: 13%;
+  left: 57%;
+  position: absolute;
+  justify-content: flex-end;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat();
+}
